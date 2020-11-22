@@ -3,8 +3,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/jquery-ui.min.css"/>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/css/jquery.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/css/jquery-ui.min.js"></script>
+	<script>
+	  $( function() {
+	    $( "#datepicker" ).datepicker({ dateFormat: 'dd/mm/yy' });
+	  } );
+	 </script>
 </head>
 <body>
 	<%@page import="com.fp.dao.ArticleDao,com.fp.bean.Article"%>  
@@ -23,12 +31,12 @@
 			<input type="text" name="title" value="<%= u.getTitle()%>"/></td>
 		</tr>  
 		<tr>
-			<td>Password:</td><td>  
+			<td>Category:</td><td>  
 			<input type="text" name="category" value="<%= u.getCategory()%>"/></td>
 		</tr>  
 		<tr>
-			<td>Email:</td><td>  
-			<input type="date" name="date" value="<%= u.getDate()%>"/></td>
+			<td>Date:</td><td>
+			<input type="text" name="date" id="datepicker" value="<%= u.getDate()%>"/>  
 		</tr>  
 		<tr>
 			<td>Body</td><td>
