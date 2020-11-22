@@ -8,7 +8,8 @@
 </head>
 <body>
 	<h1>ARCO</h1>
-	<a href="addarticleform.jsp">Add Article</a>
-	<a href="viewarticle.jsp">View Article</a>
+	<a href="addarticleform">Add Article</a>
+	<a href="viewarticle">View Article</a>
+	<a href="register">Register</a>
 </body>
 </html>
