@@ -9,7 +9,7 @@ public class ArticleDao {
 	    Connection con=null;  
 	    try{  
 	        Class.forName("com.mysql.jdbc.Driver");  
-	        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","","");  
+	        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","");  
 	    }catch(Exception e){System.out.println(e);}  
 	    return con;  
 	}  
@@ -18,7 +18,7 @@ public class ArticleDao {
 	    try{  
 	        Connection con=getConnection();  
 	        PreparedStatement ps=con.prepareStatement(  
-	"insert into register(title,category,date,body,country) values(?,?,?,?,?)");  
+	"insert into article(title,category,date,body) values(?,?,?,?)");  
 	        ps.setString(1,u.getTitle());  
 	        ps.setString(2,u.getCategory());  
 	        ps.setString(3,u.getDate());  
@@ -58,7 +58,7 @@ public class ArticleDao {
 	      
 	    try{  
 	        Connection con=getConnection();  
-	        PreparedStatement ps=con.prepareStatement("select * from register");  
+	        PreparedStatement ps=con.prepareStatement("select * from article");  
 	        ResultSet rs=ps.executeQuery();  
 	        while(rs.next()){  
 	            Article u=new Article();  

@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Article{
 	private int id;  
-	private String Title,Category,Date,Body;
+	private String title,category,date,body;
 	public int getId() {
 		return id;
 	}
@@ -11,27 +11,27 @@ public class Article{
 		this.id = id;
 	}
 	public String getTitle() {
-		return Title;
+		return title;
 	}
 	public void setTitle(String title) {
-		Title = title;
+		this.title = title;
 	}
 	public String getCategory() {
-		return Category;
+		return category;
 	}
 	public void setCategory(String category) {
-		Category = category;
+		this.category = category;
 	}
 	public String getDate() {
-		return Date;
+		return date;
 	}
 	public void setDate(String date) {
-		Date = date;
+		this.date = date;
 	}
 	public String getBody() {
-		return Body;
+		return body;
 	}
 	public void setBody(String body) {
-		Body = body;
+		this.body = body;
 	}
 }  
