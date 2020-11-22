@@ -15,7 +15,7 @@
 	%>  
   
 	<h1>Edit Form</h1>  
-	<form action="edituser.jsp" method="post">  
+	<form action="editarticle.jsp" method="post">  
 	<input type="hidden" name="id" value="<%=u.getId() %>"/>  
 	<table>  
 		<tr>
@@ -32,7 +32,7 @@
 		</tr>  
 		<tr>
 			<td>Body</td><td>
-			<td><textarea id="bodyedit" name="body" />value="<%= u.getBody()%>"</textarea></td>
+			<textarea id="bodyedit" name="body"><%= u.getBody()%></textarea></td>	
 		</tr>   
 		<tr>
 			<td colspan="2"><input type="submit" value="Edit Article"/></td>

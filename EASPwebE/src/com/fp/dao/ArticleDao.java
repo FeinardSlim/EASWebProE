@@ -32,12 +32,12 @@ public class ArticleDao {
 	    try{  
 	        Connection con=getConnection();  
 	        PreparedStatement ps=con.prepareStatement(  
-	"update register set title=?,category=?,date=?,body=?,country=? where id=?");  
+	"update article set title=?,category=?,date=?,body=? where id=?");  
 	        ps.setString(1,u.getTitle());  
 	        ps.setString(2,u.getCategory());  
 	        ps.setString(3,u.getDate());  
 	        ps.setString(4,u.getBody());  
-	        ps.setInt(6,u.getId());  
+	        ps.setInt(5,u.getId());  
 	        status=ps.executeUpdate();  
 	    }catch(Exception e){System.out.println(e);}  
 	    return status;  
@@ -46,7 +46,7 @@ public class ArticleDao {
 	    int status=0;  
 	    try{  
 	        Connection con=getConnection();  
-	        PreparedStatement ps=con.prepareStatement("delete from register where id=?");  
+	        PreparedStatement ps=con.prepareStatement("delete from article where id=?");  
 	        ps.setInt(1,u.getId());  
 	        status=ps.executeUpdate();  
 	    }catch(Exception e){System.out.println(e);}  
@@ -76,7 +76,7 @@ public class ArticleDao {
 	    Article u=null;  
 	    try{  
 	        Connection con=getConnection();  
-	        PreparedStatement ps=con.prepareStatement("select * from register where id=?");  
+	        PreparedStatement ps=con.prepareStatement("select * from article where id=?");  
 	        ps.setInt(1,id);  
 	        ResultSet rs=ps.executeQuery();  
 	        while(rs.next()){  
