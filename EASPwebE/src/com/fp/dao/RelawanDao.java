@@ -3,7 +3,7 @@ import java.sql.*;
 import java.util.ArrayList;  
 import java.util.List;  
 import com.fp.bean.Relawan;
-import com.mysql.jdbc.ResultSet;  
+//import com.mysql.jdbc.ResultSet;  
 
 public class RelawanDao
 {    

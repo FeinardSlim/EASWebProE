@@ -14,7 +14,7 @@
 </head>
 <body>
 	<h1>Welcome to Sisco</h1>
-	<a href="article/viewarticleuser">Lihat Article Admin</a>
+	<a href="article/viewarticle">Lihat Article Admin</a>
 	<a href="relawan/viewrelawan">Lihat Relawan Admin</a>
 	<a href="admin/index">Admin</a>
 	

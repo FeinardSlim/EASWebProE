@@ -41,6 +41,7 @@
 			<td>${u.getCategory()}</td>  
 			<td>${u.getDate()}</td>
 			<td>${u.getBody()}</td>
+			<td><a href="viewdetail.jsp?id=${u.getId()}">Lihat lebih lengkap</a></td> 
 		</tr>  
 		</c:forEach>  
 	</table>  
