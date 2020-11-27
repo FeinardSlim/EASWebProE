@@ -6,7 +6,7 @@
 <%  
 int status= UserDAO.save(obj);  
 if(status>0)  
-	response.sendRedirect("../registologin.jsp");
+	response.sendRedirect("registologin.jsp");
 else
-	response.sendRedirect("../regisfail.jsp");
+	response.sendRedirect("regisfail.jsp");
 %>  

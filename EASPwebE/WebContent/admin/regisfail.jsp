@@ -8,6 +8,6 @@
 </head>
 <body>
 	<p>Ada masalah silahkan daftar lagi</p>  
-	<jsp:include page="admin/register.jsp"></jsp:include>  
+	<jsp:include page="register.jsp"></jsp:include>  
 </body>
 </html>

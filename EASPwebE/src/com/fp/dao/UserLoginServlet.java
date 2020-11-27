@@ -9,7 +9,7 @@ import javax.servlet.http.*;
 
 import com.fp.bean.User;
  
-@WebServlet("/logino.jsp")
+@WebServlet("/admin/logino.jsp")
 public class UserLoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
  
@@ -26,12 +26,12 @@ public class UserLoginServlet extends HttpServlet {
          
         try {
             User user = userDao.checkLogin(email, password);
-            String destPage = "login.jsp";
+            String destPage = "index/login.jsp";
              
             if (user != null) {
                 HttpSession session = request.getSession();
                 session.setAttribute("user", user);
-                destPage = "admin/index.jsp";
+                destPage = "index.jsp";
             } else {
                 String message = "Invalid email/password";
                 request.setAttribute("message", message);

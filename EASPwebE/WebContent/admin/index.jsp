@@ -11,7 +11,7 @@
 	    if ((session.getAttribute("user") == null) || (session.getAttribute("user") == "")) {
 	%>
 	You are not logged in<br/>
-	<a href="../login">Please Login</a>
+	<a href="login">Please Login</a>
 	<a href="register">Or Register</a>
 	<%} else {
 	%>
@@ -19,7 +19,7 @@
         <h1>Welcome to Pabji Mobail</h1>
         <b>${user.fullname} (${user.email})</b>
         <br><br>
-        <a href="/EASPwebE/logouto">Logout</a>
+        <a href="../logouto">Logout</a>
     </div>
 	<%
 	    }
