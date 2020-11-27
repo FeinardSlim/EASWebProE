@@ -12,6 +12,7 @@
 	%>
 	You are not logged in<br/>
 	<a href="../login">Please Login</a>
+	<a href="register">Or Register</a>
 	<%} else {
 	%>
 	<div style="text-align: center">

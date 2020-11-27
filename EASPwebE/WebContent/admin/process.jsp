@@ -6,7 +6,7 @@
 <%  
 int status= UserDAO.save(obj);  
 if(status>0)  
-	out.print("You are successfully registered");
+	response.sendRedirect("../registologin.jsp");
 else
-	out.print("You are nonsuccessfully registered");
+	response.sendRedirect("../regisfail.jsp");
 %>  
