@@ -6,7 +6,7 @@
 <%  
 int status= UserDAO.save(obj);  
 if(status>0)  
-	out.print("You are successfully registered");  
+	out.print("You are successfully registered");
 else
 	out.print("You are nonsuccessfully registered");
 %>  

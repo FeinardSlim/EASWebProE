@@ -7,8 +7,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>ARCO Admin Side</h1>
-	<a href="../login">Login</a>
-	<a href="register">Register</a>
+	<%
+	    if ((session.getAttribute("user") == null) || (session.getAttribute("user") == "")) {
+	%>
+	You are not logged in<br/>
+	<a href="../login">Please Login</a>
+	<%} else {
+	%>
+	<div style="text-align: center">
+        <h1>Welcome to Pabji Mobail</h1>
+        <b>${user.fullname} (${user.email})</b>
+        <br><br>
+        <a href="logouto">Logout</a>
+    </div>
+	<%
+	    }
+	%>
 </body>
 </html>
