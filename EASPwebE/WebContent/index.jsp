@@ -8,8 +8,7 @@
 </head>
 <body>
 	<h1>ARCO</h1>
-	<a href="addarticleform">Add Article</a>
-	<a href="viewarticle">View Article</a>
+	<a href="viewarticleuser">View Article</a>
 	<a href="admin/index">Admin Side</a>
 </body>
 </html>

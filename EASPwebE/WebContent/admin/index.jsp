@@ -19,6 +19,8 @@
         <h1>Welcome to Pabji Mobail</h1>
         <b>${user.fullname} (${user.email})</b>
         <br><br>
+        <a href="../addarticleform">Add Article</a>
+        <br><br>
         <a href="../logouto">Logout</a>
     </div>
 	<%
