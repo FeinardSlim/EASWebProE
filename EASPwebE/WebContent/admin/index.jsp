@@ -19,7 +19,7 @@
         <h1>Welcome to Pabji Mobail</h1>
         <b>${user.fullname} (${user.email})</b>
         <br><br>
-        <a href="logouto">Logout</a>
+        <a href="/EASPwebE/logouto">Logout</a>
     </div>
 	<%
 	    }
