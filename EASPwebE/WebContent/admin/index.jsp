@@ -21,6 +21,8 @@
         <br><br>
         <a href="../addarticleform">Add Article</a>
         <a href="../viewarticle">View Article</a>
+        <a href="../addrelawanform">Add Relawan</a>
+        <a href="../viewrelawan">View Relawan</a>
         <br><br>
         <a href="../logouto">Logout</a>
     </div>

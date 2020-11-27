@@ -2,7 +2,8 @@ package com.fp.dao;
 import java.sql.*;  
 import java.util.ArrayList;  
 import java.util.List;  
-import com.fp.bean.Article;  
+import com.fp.bean.Article;
+import com.mysql.jdbc.ResultSet;  
 
 public class ArticleDao {
 	public static Connection getConnection(){  
@@ -71,7 +72,9 @@ public class ArticleDao {
 	        }  
 	    }catch(Exception e){System.out.println(e);}  
 	    return list;  
-	}  
+	}
+	
+	
 	public static Article getRecordById(int id){  
 	    Article u=null;  
 	    try{  
