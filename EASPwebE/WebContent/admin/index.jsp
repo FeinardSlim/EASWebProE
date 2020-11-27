@@ -16,7 +16,7 @@
 	<%} else {
 	%>
 	<div style="text-align: center">
-        <h1>Welcome to Pabji Mobail</h1>
+        <h1>Welcome to SISCO</h1>
         <b>${user.fullname} (${user.email})</b>
         <br><br>
         <a href="../addarticleform">Add Article</a>

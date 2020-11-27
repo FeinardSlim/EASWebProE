@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p>Sorry, an error occurred!</p>  
-	<jsp:include page="articleform.html"></jsp:include>  
+	<p>Record successfully saved!</p>  
+	<jsp:include page="viewarticle.jsp"></jsp:include>  
 </body>
 </html>

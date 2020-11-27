@@ -11,7 +11,9 @@
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
 	  
 	<h1>Articles List</h1>  
-	  
+	
+	<a href="addrelawanform.jsp">Add Article</a>
+	
 	<%  
 	List<Article> list=ArticleDao.getAllRecords();  
 	request.setAttribute("list",list);  
@@ -34,7 +36,7 @@
 			<td>${u.getCategory()}</td>  
 			<td>${u.getDate()}</td>
 			<td>${u.getBody()}</td>
-			<td><a href="editform.jsp?id=${u.getId()}">Edit</a></td>  
+			<td><a href="editformarticle.jsp?id=${u.getId()}">Edit</a></td>  
 			<td><a href="deletearticle.jsp?id=${u.getId()}">Delete</a></td>
 		</tr>  
 		</c:forEach>  

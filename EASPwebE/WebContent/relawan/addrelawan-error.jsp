@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Error Pendaftaran Relawan</title>
 </head>
 <body>
-	<p>Record successfully saved!</p>  
-	<jsp:include page="articleform.html"></jsp:include>  
+	<p>Maaf, terjadi error dalam pendaftaran</p>  
+	<jsp:include page="viewrelawan.jsp"></jsp:include>  
 </body>
 </html>

@@ -15,6 +15,30 @@
 	 </script>
 </head>
 <body>
-	<jsp:include page="articleform.html"></jsp:include>  
+<a href="viewarticle">View all record</a>
+
+<h1> add new article</h1>
+<form action="addarticle.jsp" method="post">
+<table>
+	<tr>
+		<td>Title</td>
+		<td><input type="text" name="title"/></td>
+	</tr> 
+	<tr>
+		<td>Category</td>
+		<td><input type="text" name="category"/></td>
+	</tr>  
+	<tr>
+		<td>Released Date</td>
+		<td><input type="text" name="date" id="datepicker"/>
+		</td>
+	</tr>  
+	<tr>
+	<td>Body</td>
+	<td><textarea id="body" name="body" placeholder="Insert body here...."></textarea></td>	
+	<tr><td colspan="2"><input type="submit" value="Tambah artikel"/></td></tr> 
+</table>
+</form>
+
 </body>
 </html>

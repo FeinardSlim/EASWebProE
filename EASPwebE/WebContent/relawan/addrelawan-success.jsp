@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Error Pendaftaran Relawan</title>
+<title>Pendaftaran Relawan Berhasil</title>
 </head>
 <body>
-	<p>Maaf, terjadi error dalam pendaftaran</p>  
-	<jsp:include page="relawanform.html"></jsp:include>  
+	<p>Pendaftaran berhasil!</p>  
+	<jsp:include page="viewrelawan.jsp"></jsp:include>  
 </body>
 </html>

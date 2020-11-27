@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>SISCO Admin Mode</title>
 </head>
 <body>
-	<h1>ARCO</h1>
-	<a href="viewarticleuser">Lihat Article</a>
-	<a href="viewrelawan">Lihat Relawan</a>
+	<h1>Welcome to Sisco Admin</h1>
+	<a href="article/viewarticleuser">Lihat Article</a>
+	<a href="relawan/viewrelawan">Lihat Relawan</a>
 	<a href="admin/index">Admin</a>
 	
 </body>
