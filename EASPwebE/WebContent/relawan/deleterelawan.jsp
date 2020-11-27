@@ -3,5 +3,5 @@
 <jsp:setProperty property="*" name="u"/>  
 <%  
 RelawanDao.delete(u);  
-response.sendRedirect("viewrelawan.jsp");  
+response.sendRedirect("deletesuccessrelawan.jsp");  
 %>  

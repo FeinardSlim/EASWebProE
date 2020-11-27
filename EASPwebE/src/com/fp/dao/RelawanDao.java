@@ -24,10 +24,10 @@ public class RelawanDao
 	        PreparedStatement ps=con.prepareStatement(  
 	"insert into relawan(nama, nik, ttl, jenis_kelamin, no_telp, email) values(?,?,?,?,?,?)");  
 	        ps.setString(1,u.getNama());  
-	        ps.setString(2,u.getNIK());  
-	        ps.setString(3,u.getTTL());  
-	        ps.setString(4,u.getJenisKelamin());  
-	        ps.setString(5,u.getNoTelp());
+	        ps.setString(2,u.getNik());  
+	        ps.setString(3,u.getTtl());  
+	        ps.setString(4,u.getJenis_kelamin());  
+	        ps.setString(5,u.getNo_telp());
 	        ps.setString(6,u.getEmail());
 	        status=ps.executeUpdate();  
 	    }catch(Exception e){System.out.println(e);}  
@@ -41,10 +41,10 @@ public class RelawanDao
 	        PreparedStatement ps=con.prepareStatement(  
 	"update relawan set nama=?, nik=?,ttl=?,jenis_kelamin=?,no_telp=?, email=? where id=?");  
 	        ps.setString(1,u.getNama());  
-	        ps.setString(2,u.getNIK());  
-	        ps.setString(3,u.getTTL());  
-	        ps.setString(4,u.getJenisKelamin());  
-	        ps.setString(5,u.getNoTelp());  
+	        ps.setString(2,u.getNik());  
+	        ps.setString(3,u.getTtl());  
+	        ps.setString(4,u.getJenis_kelamin());  
+	        ps.setString(5,u.getNo_telp());  
 	        ps.setString(6,u.getEmail());
 	        ps.setInt(7,u.getId());  
 	        status=ps.executeUpdate();  
@@ -75,10 +75,10 @@ public class RelawanDao
 	        	Relawan u=new Relawan();  
 	            u.setId(rs.getInt("id"));  
 	            u.setNama(rs.getString("nama"));  
-	            u.setNIK(rs.getString("nik"));  
-	            u.setTTL(rs.getString("ttl"));  
-	            u.setJenisKelamin(rs.getString("jenis_kelamin"));  
-	            u.setNoTelp(rs.getString("no_telp"));
+	            u.setNik(rs.getString("nik"));  
+	            u.setTtl(rs.getString("ttl"));  
+	            u.setJenis_kelamin(rs.getString("jenis_kelamin"));  
+	            u.setNo_telp(rs.getString("no_telp"));
 	            u.setEmail(rs.getString("email"));
 	            list.add(u);  
 	        }  
@@ -97,10 +97,10 @@ public class RelawanDao
 	            u=new Relawan();  
 	            u.setId(rs.getInt("id"));  
 	            u.setNama(rs.getString("nama"));  
-	            u.setNIK(rs.getString("nik"));  
-	            u.setTTL(rs.getString("ttl"));  
-	            u.setJenisKelamin(rs.getString("jenis_kelamin"));  
-	            u.setNoTelp(rs.getString("no_telp"));
+	            u.setNik(rs.getString("nik"));  
+	            u.setTtl(rs.getString("ttl"));  
+	            u.setJenis_kelamin(rs.getString("jenis_kelamin"));  
+	            u.setNo_telp(rs.getString("no_telp"));
 	            u.setEmail(rs.getString("email"));
 	        }  
 	    }catch(Exception e){System.out.println(e);}  

@@ -14,7 +14,7 @@
             <input name="fullname" size="50" />
             <br><br>
             <label for="email">Email:</label>
-            <input name="email" size="50" />
+            <input type="email" name="email" size="50" />
             <br><br>
             <label for="password">Password:</label>
             <input type="password" name="password" size="50" />

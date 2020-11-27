@@ -22,11 +22,11 @@
 			</tr>  
 			<tr>
 				<td>NIK</td>
-				<td><input type="text" name="nik" value="<%= u.getNIK()%>"/></td>
+				<td><input type="text" name="nik" value="<%= u.getNik()%>"/></td>
 			</tr>  
 			<tr>
 				<td>Tempat, Tanggal Lahir</td>
-				<td><input type="text" name="ttl" value="<%= u.getTTL()%>"/></td>
+				<td><input type="text" name="ttl" value="<%= u.getTtl()%>"/></td>
 			</tr>  
 			<tr>
 				<td>Jenis Kelamin</td>
@@ -37,7 +37,7 @@
 			</tr>
 			<tr>
 				<td>Nomor Telepon</td>
-				<td><input type="text" name="no_telp" value="<%= u.getNoTelp()%>"/></td>
+				<td><input type="text" name="no_telp" value="<%= u.getNo_telp()%>"/></td>
 			</tr>
 			<tr>
 				<td>Email</td>

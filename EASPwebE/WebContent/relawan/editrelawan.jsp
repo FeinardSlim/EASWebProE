@@ -3,5 +3,6 @@
 <jsp:setProperty property="*" name="u"/>  
 <%  
 int i=RelawanDao.update(u);  
-response.sendRedirect("viewrelawan.jsp");  
-%>  
+response.sendRedirect("editsuccessrelawan.jsp");  
+%>
+  

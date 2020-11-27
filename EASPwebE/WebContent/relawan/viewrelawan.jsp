@@ -33,12 +33,12 @@
 		<tr>
 			<td>${u.getId()}</td>
 			<td>${u.getNama()}</td>
-			<td>${u.getNIK()}</td>  
-			<td>${u.getTTL()}</td>
-			<td>${u.getJenisKelamin()}</td>
-			<td>${u.getNoTelp()}</td>  
+			<td>${u.getNik()}</td>  
+			<td>${u.getTtl()}</td>
+			<td>${u.getJenis_kelamin()}</td>
+			<td>${u.getNo_telp()}</td>  
 			<td>${u.getEmail()}</td>
-			<td><a href="editrelawan.jsp?id=${u.getId()}">Edit</a></td>  
+			<td><a href="editrelawanform.jsp?id=${u.getId()}">Edit</a></td>  
 			<td><a href="deleterelawan.jsp?id=${u.getId()}">Delete</a></td>
 		</tr>  
 		</c:forEach>  

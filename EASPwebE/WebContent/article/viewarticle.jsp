@@ -12,7 +12,7 @@
 	  
 	<h1>Articles List</h1>  
 	
-	<a href="addrelawanform.jsp">Add Article</a>
+	<a href="../relawan/addrelawanform.jsp">Add Relawan</a>
 	
 	<%  
 	List<Article> list=ArticleDao.getAllRecords();  
