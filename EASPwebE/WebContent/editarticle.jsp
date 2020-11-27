@@ -3,5 +3,5 @@
 <jsp:setProperty property="*" name="u"/>  
 <%  
 int i=ArticleDao.update(u);  
-response.sendRedirect("viewarticle.jsp");  
+response.sendRedirect("editsucc.jsp");  
 %>  

@@ -3,5 +3,5 @@
 <jsp:setProperty property="*" name="u"/>  
 <%  
 ArticleDao.delete(u);  
-response.sendRedirect("viewarticle.jsp");  
+response.sendRedirect("deletesucc.jsp");  
 %>  

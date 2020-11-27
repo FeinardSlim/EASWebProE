@@ -20,6 +20,7 @@
         <b>${user.fullname} (${user.email})</b>
         <br><br>
         <a href="../addarticleform">Add Article</a>
+        <a href="../viewarticle">View Article</a>
         <br><br>
         <a href="../logouto">Logout</a>
     </div>

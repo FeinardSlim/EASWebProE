@@ -24,8 +24,7 @@
 			<th>Category</th>
 			<th>Date</th>  
 			<th>Body</th>
-			<th>Edit</th>
-			<th>Delete</th>
+			<th>Detail</th>
 		</tr>  
 		<c:forEach items="${list}" var="u">  
 		<tr>
@@ -34,8 +33,7 @@
 			<td>${u.getCategory()}</td>  
 			<td>${u.getDate()}</td>
 			<td>${u.getBody()}</td>
-			<td><a href="editform.jsp?id=${u.getId()}">Edit</a></td>  
-			<td><a href="deletearticle.jsp?id=${u.getId()}">Delete</a></td>
+			<td><a href="editform.jsp?id=${u.getId()}">Masih Edit Lol</a></td>  
 		</tr>  
 		</c:forEach>  
 	</table>  
