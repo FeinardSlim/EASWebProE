@@ -14,6 +14,11 @@
 	  <from>^/?([a-z]+)$</from>
 	  <to type="forward">/$1.jsp</to>
 	</rule>
+	
+	<rule>
+	  <from>^/admin/?([a-z]+)$</from>
+	  <to type="forward">/admin/$1.jsp</to>
+	</rule>
 
     <rule>
         <note>

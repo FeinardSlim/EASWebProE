@@ -7,9 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>ARCO</h1>
-	<a href="addarticleform">Add Article</a>
-	<a href="viewarticle">View Article</a>
-	<a href="admin/index">Admin Side</a>
+	<h1>ARCO Admin Side</h1>
+	<a href="../login">Login</a>
+	<a href="register">Register</a>
 </body>
 </html>
