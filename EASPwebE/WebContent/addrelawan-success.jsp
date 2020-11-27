@@ -4,13 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Pendaftaran Relawan Berhasil</title>
 </head>
 <body>
-	<h1>ARCO</h1>
-	<a href="viewarticleuser">Lihat Article</a>
-	<a href="viewrelawan">Lihat Relawan</a>
-	<a href="admin/index">Admin</a>
-	
+	<p>Pendaftaran berhasil!</p>  
+	<jsp:include page="relawanform.html"></jsp:include>  
 </body>
 </html>
