@@ -33,9 +33,15 @@
 			    <ul class="navbar-nav mr-auto">
 			      <li class="nav-item">
 			        <a class="nav-link" href="../article/viewarticle">Artikel</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="viewrelawan">Relawan</a>
+			      </li>			      
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Relawan
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="relawan/addrelawanform.jsp">Pendaftaran Relawan</a>
+			          <a class="dropdown-item" href="relawan/viewrelawan">Relawan Terdaftar</a>
+			        </div>
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link" href="../admin/index">Admin</a>
@@ -72,17 +78,15 @@
 		  </div>
 	  </div>
 	</nav>
-	<% 
+     <div class="container">
+	
+	<h1>Daftar Relawan</h1>  
+	  <% 
       	if ((session.getAttribute("user") != null)) {
      %>
-			<a href="addrelawanform.jsp" class="btn btn-outline-primary btn-block" role="button">Tambah Relawan</a> 
+			<a href="addrelawanform.jsp" class="btn btn-outline-primary" role="button">Tambah Relawan</a> 
      <%
      }
-     %>  
-     <div class="container">
-	<h1>Daftar Relawan</h1>  
-	  
-	<%  
 	List<Relawan> list=RelawanDao.getAllRecords();  
 	request.setAttribute("list",list);  
 	%>  

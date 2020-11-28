@@ -5,12 +5,8 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Insert title here</title>
-	<style>
-    dd {
-        word-break: break-all;
-    }
-</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
 	<%@page import="com.fp.dao.ArticleDao,com.fp.bean.Article"%> 
@@ -18,6 +14,7 @@
 	String id=request.getParameter("id");  
 	Article u=ArticleDao.getRecordById(Integer.parseInt(id));  
 	%>
+	
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<div class="container">
 	  <a class="navbar-brand" href="/EASPwebE/">SISCO lite</a>
@@ -30,22 +27,17 @@
 	      <li class="nav-item">
 	        <a class="nav-link" href="article/viewarticle">Artikel</a>
 	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="relawan/viewrelawan">Relawan</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="admin/index">Admin</a>
-	      </li>
 	      <li class="nav-item dropdown">
 	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	          Relawan
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" href="#"></a>
-	          <a class="dropdown-item" href="#">Another action</a>
-	          <div class="dropdown-divider"></div>
-	          <a class="dropdown-item" href="#">Something else here</a>
+	          <a class="dropdown-item" href="relawan/addrelawanform.jsp">Pendaftaran Relawan</a>
+	          <a class="dropdown-item" href="relawan/viewrelawan">Relawan Terdaftar</a>
 	        </div>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="admin/index">Admin</a>
 	      </li>
 	    </ul>
 	    <!-- Right Side Of Navbar -->
@@ -79,26 +71,29 @@
 	  </div>
 	  </div>
 	</nav>
-	<div class="container body-content"> 
-	<h2>Details</h2>
-
-	<div>
-	    <h4>Artikel</h4>
-	    <a href="./" class="btn btn-info">Kembali</a>
-	    <hr />
-	    <div class="text-center container-fluid" style="font-size:30px;text-transform:uppercase; font-weight:bold ;padding-bottom:15px">
-	        <%= u.getTitle()%>
-	    </div>
-	    <div class="text-center container-fluid" style="font-size:11px;padding-bottom:30px">
-	        <p>Dibuat Pada <%= u.getDate()%></p>
-	    </div>
-	    <div class="text-center container-fluid" style="font-size:11px;padding-bottom:30px">
-	        <p>Kategori : <%= u.getCategory()%></p>
-	    </div>
-	    <div class="container" style="white-space:initial;word-wrap:break-word">
-	        <%= u.getBody()%>
-	    </div>
+	
+	<div class="container"> 
+		<h2>Details</h2>
+	
+		<div>
+		    <h4>Artikel</h4>
+		    <a href="./" class="btn btn-info">Kembali</a>
+		    <hr />
+		    <div class="text-center container-fluid" style="font-size:30px;text-transform:uppercase; font-weight:bold ;padding-bottom:15px">
+		        <%= u.getTitle()%>
+		    </div>
+		    <div class="text-center container-fluid" style="font-size:11px;padding-bottom:30px">
+		        <p>Dibuat Pada <%= u.getDate()%></p>
+		    </div>
+		    <div class="text-center container-fluid" style="font-size:11px;padding-bottom:30px">
+		        <p>Kategori : <%= u.getCategory()%></p>
+		    </div>
+		    <div class="container" style="white-space:initial;word-wrap:break-word">
+		        <%= u.getBody()%>
+		    </div>
+		</div>
 	</div>
-	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
