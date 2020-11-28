@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
-	<title>Insert title here</title>
+	<title>Ubah Artikel</title>
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/jquery-ui.min.css"/>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/css/jquery.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/css/jquery-ui.min.js"></script>
@@ -22,28 +22,28 @@
 	Article u=ArticleDao.getRecordById(Integer.parseInt(id));  
 	%>  
   
-	<h1>Edit Form</h1>  
+	<h1>Edit Artikel</h1>  
 	<form action="editarticle.jsp" method="post">  
 	<input type="hidden" name="id" value="<%=u.getId() %>"/>  
 	<table>  
 		<tr>
-			<td>Name:</td><td>  
+			<td>Judul</td><td>  
 			<input type="text" name="title" value="<%= u.getTitle()%>"/></td>
 		</tr>  
 		<tr>
-			<td>Category:</td><td>  
+			<td>Kategori</td><td>  
 			<input type="text" name="category" value="<%= u.getCategory()%>"/></td>
 		</tr>  
 		<tr>
-			<td>Date:</td><td>
+			<td>Tanggal Rilis</td><td>
 			<input type="text" name="date" id="datepicker" value="<%= u.getDate()%>"/>  
 		</tr>  
 		<tr>
-			<td>Body</td><td>
+			<td>Isi Artikel</td><td>
 			<textarea id="bodyedit" name="body"><%= u.getBody()%></textarea></td>	
 		</tr>   
 		<tr>
-			<td colspan="2"><input type="submit" value="Edit Article"/></td>
+			<td colspan="2"><input type="submit" value="Simpan Perubahan"/></td>
 		</tr>  
 	</table>  
 	</form>  

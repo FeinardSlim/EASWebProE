@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
-	<title>add article</title>
+	<title>Buat Artikel</title>
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/jquery-ui.min.css"/>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/assets/jquery.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/assets/jquery-ui.min.js"></script>
@@ -21,21 +21,21 @@
 <form action="addarticle.jsp" method="post">
 <table>
 	<tr>
-		<td>Title</td>
+		<td>Judul</td>
 		<td><input type="text" name="title"/></td>
 	</tr> 
 	<tr>
-		<td>Category</td>
+		<td>Kategori</td>
 		<td><input type="text" name="category"/></td>
 	</tr>  
 	<tr>
-		<td>Released Date</td>
+		<td>Tanggal Rilis</td>
 		<td><input type="text" name="date" id="datepicker"/>
 		</td>
 	</tr>  
 	<tr>
-	<td>Body</td>
-	<td><textarea id="body" name="body" placeholder="Insert body here...."></textarea></td>	
+	<td>Isi Artikel</td>
+	<td><textarea id="body" name="body" placeholder="Masukkan isi artikel disini...."></textarea></td>	
 	<tr><td colspan="2"><input type="submit" value="Tambah artikel"/></td></tr> 
 </table>
 </form>

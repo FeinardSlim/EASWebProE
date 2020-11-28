@@ -28,11 +28,11 @@
 	<table border="1" width="90%">  
 		<tr>
 			<th>Id</th>
-			<th>Title</th>
-			<th>Category</th>
-			<th>Date</th>  
-			<th>Body</th>
-			<th>Detail</th>
+			<th>Judul</th>
+			<th>Kategori</th>
+			<th>Tanggal Rilis</th>  
+			<th>Isi</th>
+			<th>Rincian</th>
 		</tr>  
 		<c:forEach items="${list}" var="u">  
 		<tr>

@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Gagal Membuat Artikel</title>
 </head>
 <body>
-	<p>Sorry, an error occurred!</p>  
+	<p>Terjadi error saat membuat artikel</p>  
 	<jsp:include page="viewarticle.jsp"></jsp:include>  
 </body>
 </html>

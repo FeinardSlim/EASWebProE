@@ -13,9 +13,9 @@
 <title>SISCO</title>
 </head>
 <body>
-	<h1>Welcome to Sisco</h1>
-	<a href="article/viewarticle">Lihat Article Admin</a>
-	<a href="relawan/viewrelawan">Lihat Relawan Admin</a>
+	<h1>Selamat Datang di SISCO</h1>
+	<a href="article/viewarticle">Lihat Artikel</a>
+	<a href="relawan/viewrelawan">Lihat Relawan</a>
 	<a href="admin/index">Admin</a>
 	
 	<jsp:include page="viewarticleuser.jsp"></jsp:include>

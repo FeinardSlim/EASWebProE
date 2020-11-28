@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Berhasil Mengubah Artikel</title>
 </head>
 <body>
-	<p>Record successfully Updated!</p>  
+	<p>Artikel diperbarui!</p>  
 	<jsp:include page="viewarticle.jsp"></jsp:include>  
 </body>
 </html>

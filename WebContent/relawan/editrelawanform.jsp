@@ -31,8 +31,8 @@
 			<tr>
 				<td>Jenis Kelamin</td>
 				<td>  
-					<input type="radio" name="jenis_kelamin" value="male"/>Laki-laki   
-					<input type="radio" name="jenis_kelamin" value="female"/>Perempuan
+					<input type="radio" name="jenis_kelamin" value="Laki-laki"/>Laki-laki   
+					<input type="radio" name="jenis_kelamin" value="Perempuan"/>Perempuan
 				</td>
 			</tr>
 			<tr>

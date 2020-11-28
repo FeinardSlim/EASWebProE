@@ -26,8 +26,8 @@
 			<th>Jenis Kelamin</th>
 			<th>No. Telp</th>
 			<th>Email</th>
-			<th>Edit</th>
-			<th>Delete</th>
+			<th>Sunting</th>
+			<th>Hapus</th>
 		</tr>  
 		<c:forEach items="${list}" var="u">  
 		<tr>
@@ -38,8 +38,8 @@
 			<td>${u.getJenis_kelamin()}</td>
 			<td>${u.getNo_telp()}</td>  
 			<td>${u.getEmail()}</td>
-			<td><a href="editrelawanform.jsp?id=${u.getId()}">Edit</a></td>  
-			<td><a href="deleterelawan.jsp?id=${u.getId()}">Delete</a></td>
+			<td><a href="editrelawanform.jsp?id=${u.getId()}">Sunting</a></td>  
+			<td><a href="deleterelawan.jsp?id=${u.getId()}">Hapus</a></td>
 		</tr>  
 		</c:forEach>  
 	</table>  

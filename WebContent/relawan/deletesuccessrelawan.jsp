@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<p>Record successfully Deleted!</p>  
+	<p>Data Relawan Berhasil Dihapus!</p>  
 	<jsp:include page="viewrelawan.jsp"></jsp:include>  
 </body>
 </html>
