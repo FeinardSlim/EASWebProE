@@ -64,7 +64,7 @@
 		
 		                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 		                        <a class="dropdown-item" href="/EASPwebE/admin/index.jsp">Dashboard</a>
-		                        <a class="dropdown-item" href="/EASPwebE/admin/logouto.jsp">Logout</a>
+		                        <a class="dropdown-item" href="/EASPwebE/logouto.jsp">Logout</a>
 		                    </div>
 		                </li>
 		              <%

@@ -10,7 +10,7 @@
 	<jsp:include page="../assets/header.jsp"></jsp:include>
 	
 	<div class="container">
-		<h1>Pendaftaran Relawan</h1>  
+		<h1 style="padding: 3% 0">Pendaftaran Relawan</h1>  
 		<form action="addrelawan.jsp" method="post">  
 			<table class="table table-borderless">  
 				<tr>
@@ -41,7 +41,7 @@
 					<td><input type="email" name="email" placeholder="example@example.com"/></td>
 				</tr>   
 				<tr>
-					<td colspan="2"><input type="submit" value="Daftar"/></td>
+					<td colspan="2"><input class="btn btn-primary" type="submit" value="Daftar"/></td>
 				</tr>  
 			</table>  
 		</form>
