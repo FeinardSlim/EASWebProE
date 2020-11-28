@@ -30,9 +30,7 @@
 	<jsp:include page="../assets/header.jsp"></jsp:include>
 	
 	<div class="container">
-		<h1 style="padding: 3% 0">Pendaftaran Relawan</h1>
-		
-		<a href="viewrelawan" class="btn btn-primary">Kembali ke list relawan</a>
+		<h1>Pendaftaran Relawan</h1>
 		<form action="addrelawan.jsp" method="post">  
 			<table class="table table-borderless">  
 				<tr>
