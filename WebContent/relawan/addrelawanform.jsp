@@ -5,12 +5,34 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Pendaftaran Relawan</title>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/jquery-ui.min.css"/>
+<script type="text/javascript" src="${pageContext.request.contextPath}/assets/jquery.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/assets/jquery-ui.min.js"></script>
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker({ dateFormat: 'dd/mm/yy' });
+  } );
+ </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<style>
+    p {
+        word-break: break-word;
+    }
+    .jumbotron {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/EASPwebE/assets/images/cdc-k0krntqcjfw-unsplash-2000x1125.jpg");
+        background-size: cover;
+        color:white;
+    }
+</style>
+<link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 	<jsp:include page="../assets/header.jsp"></jsp:include>
 	
 	<div class="container">
-		<h1 style="padding: 3% 0">Pendaftaran Relawan</h1>  
+		<h1 style="padding: 3% 0">Pendaftaran Relawan</h1>
+		
+		<a href="viewrelawan" class="btn btn-primary">Kembali ke list relawan</a>
 		<form action="addrelawan.jsp" method="post">  
 			<table class="table table-borderless">  
 				<tr>
