@@ -35,7 +35,9 @@
 	<table width="90%" class="table table-hover table-striped">  
 		<thead>
 		<tr class="justify-content-center">
+			<% if ((session.getAttribute("user") != null)) { %>
 			<th>No</th>
+			<% } %>
 			<th>Nama</th>
 			<th>NIK</th>
 			<th>TTL</th>  
@@ -54,7 +56,9 @@
 		</thead>  
 		<c:forEach items="${list}" var="u">  
 		<tr>
+			<% if ((session.getAttribute("user") != null)) { %>
 			<td>${u.getId()}</td>
+			<% } %>
 			<td>${u.getNama()}</td>
 			<td>${u.getNik()}</td>  
 			<td>${u.getTtl()}</td>

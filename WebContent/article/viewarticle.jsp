@@ -44,7 +44,9 @@
 	  
 	<table border="1" width="90%" class="table table-hover thead-dark">  
 		<tr class="justify-content-center">
+			<% if ((session.getAttribute("user") != null)) { %>
 			<th>No</th>
+			<% } %>
 			<th>Judul</th>
 			<th>Kategori</th>
 			<th>Tanggal Rilis</th>  
@@ -56,7 +58,9 @@
 		</tr>  
 		<c:forEach items="${list}" var="u">  
 		<tr>
+			<% if ((session.getAttribute("user") != null)) { %>
 			<td>${u.getId()}</td>
+			<% } %>
 			<td>${u.getTitle()}</td>
 			<td>${u.getCategory()}</td>  
 			<td>${u.getDate()}</td>
