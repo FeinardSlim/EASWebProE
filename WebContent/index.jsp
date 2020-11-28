@@ -11,7 +11,7 @@
 	        word-break: break-word;
 	    }
 	    .jumbotron {
-	        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/assets/images/cdc-k0krntqcjfw-unsplash-2000x1125.jpg");
+	        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/EASPwebE/assets/images/cdc-k0krntqcjfw-unsplash-2000x1125.jpg");
 	        background-size: cover;
 	        color:white;
 	    }
@@ -90,8 +90,9 @@
 	
 		<div class="jumbotron">
 		    <h1>SISCO lite</h1>
-		    <p class="lead">ARCO adalah bagian artikel dari SISCO (Sistem Informasi Siaga Corona)</p>
+		    <p class="lead">SISCO lite merupakan upgrade dari ARCO yang mengcakup bagian artikel dari SISCO (Sistem Informasi Siaga Corona) disertai Sistem Relawan</p>
 		    <a href="http://frightening-dungeon-33776.herokuapp.com/" class="btn btn-primary btn-lg">Kunjungi SISCO &raquo;</a>
+		    <a href="http://aulkiller-001-site1.itempurl.com/" class="btn btn-primary btn-lg">Atau ARCO &raquo;</a>
 		    <%
 	    		if ((session.getAttribute("user") == null) || (session.getAttribute("user") == "")){}else{
 			%>
