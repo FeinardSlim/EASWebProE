@@ -28,3 +28,7 @@ textarea {
 	overflow: hidden;
 	max-width: initial;
 }
+
+input{
+	width:300px;
+}
