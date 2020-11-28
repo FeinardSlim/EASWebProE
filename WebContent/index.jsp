@@ -25,7 +25,7 @@
 	request.setAttribute("list",list);  
 	%>  
 	
-	<jsp:include page="../assets/header.jsp"></jsp:include> 
+	<jsp:include page="/assets/header.jsp"></jsp:include> 
 	
 	<div style="padding-top:20px" class="container body-content">
 	
@@ -60,7 +60,7 @@
 		</div>
 		<!-- <jsp:include page="viewarticleuser.jsp"></jsp:include> -->
 	</div>
-		<jsp:include page="../assets/footer.jsp"></jsp:include> 
+		<jsp:include page="/assets/footer.jsp"></jsp:include> 
 	
 	<!-- <script src="bootstrap/js/bootstrap.js"></script> -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

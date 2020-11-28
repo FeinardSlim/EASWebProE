@@ -28,13 +28,13 @@
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav mr-auto">
 			      <li class="nav-item">
-			        <a class="nav-link" href="../article/viewarticle">Artikel</a>
+			        <a class="nav-link" href="/EASPwebE/article/viewarticle.jsp">Artikel</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="../relawan/viewrelawan">Relawan</a>
+			        <a class="nav-link" href="/EASPwebE/relawan/viewrelawan.jsp">Relawan</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="../admin/index">Admin</a>
+			        <a class="nav-link" href="/EASPwebE/admin/index.jsp">Admin</a>
 			      </li>
 			    </ul>
 			    <!-- Right Side Of Navbar -->
@@ -57,8 +57,8 @@
 		                    </a>
 		
 		                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-		                        <a class="dropdown-item" href="../admin/index">Dashboard</a>
-		                        <a class="dropdown-item" href="../admin/logouto">Logout</a>
+		                        <a class="dropdown-item" href="../admin/index.jsp">Dashboard</a>
+		                        <a class="dropdown-item" href="../admin/logouto.jsp">Logout</a>
 		                    </div>
 		                </li>
 		              <%
