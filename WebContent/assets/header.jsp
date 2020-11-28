@@ -30,8 +30,14 @@
 			      <li class="nav-item">
 			        <a class="nav-link" href="/EASPwebE/article/viewarticle.jsp">Artikel</a>
 			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="/EASPwebE/relawan/viewrelawan.jsp">Relawan</a>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Relawan
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="/EASPwebE/relawan/addrelawanform.jsp">Pendaftaran Relawan</a>
+			          <a class="dropdown-item" href="/EASPwebE/relawan/viewrelawan">Relawan Terdaftar</a>
+			        </div>
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link" href="/EASPwebE/admin/index.jsp">Admin</a>
@@ -44,10 +50,10 @@
 		              	if ((session.getAttribute("user") == null) || (session.getAttribute("user") == "")) {
 		              %>
 			              <li class="nav-item">
-			                  <a class="nav-link" href="../admin/login">Login</a>
+			                  <a class="nav-link" href="/EASPwebE/admin/login">Login</a>
 			              </li>
 			              <li class="nav-item">
-			                  <a class="nav-link" href="../admin/register">Register</a>
+			                  <a class="nav-link" href="/EASPwebE/admin/register">Register</a>
 			              </li>
 		              <%} else {
 		              %>
@@ -57,8 +63,8 @@
 		                    </a>
 		
 		                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-		                        <a class="dropdown-item" href="../admin/index.jsp">Dashboard</a>
-		                        <a class="dropdown-item" href="../admin/logouto.jsp">Logout</a>
+		                        <a class="dropdown-item" href="/EASPwebE/admin/index.jsp">Dashboard</a>
+		                        <a class="dropdown-item" href="/EASPwebE/admin/logouto.jsp">Logout</a>
 		                    </div>
 		                </li>
 		              <%
