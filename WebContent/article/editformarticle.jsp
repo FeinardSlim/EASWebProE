@@ -44,20 +44,20 @@
 			<table class="table table-borderless">
 				<tr>
 				<td>Judul</td>
-				<td><input type="text" name="title" value=<%=u.getTitle() %>/></td>
+				<td><input type="text" name="title" value="<%=u.getTitle() %>"/></td>
 				</tr> 
 				<tr>
 					<td>Kategori</td>
-					<td><input type="text" name="category" value=<%=u.getCategory() %>/></td>
+					<td><input type="text" name="category" value="<%=u.getCategory() %>"/></td>
 				</tr>  
 				<tr>
 					<td>Tanggal Rilis</td>
-					<td><input type="text" name="date" id="datepicker" value=<%=u.getDate() %>/>
+					<td><input type="text" name="date" id="datepicker" value="<%=u.getDate() %>"/>
 					</td>
 				</tr>  
 				<tr>
 				<td>Isi Artikel</td>
-				<td><textarea id="body" name="body" value=<%=u.getBody() %>></textarea></td>
+				<td><textarea id="body" name="body"><%=u.getBody() %></textarea></td>
 				<tr>
 					<td colspan="2"><input type="submit" class="btn btn-info" value="Kirim Artikel"/></td>
 				</tr>

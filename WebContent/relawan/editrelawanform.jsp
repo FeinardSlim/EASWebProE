@@ -38,7 +38,7 @@
 		<h1>Form Edit Data Relawan</h1>  
 		<form action="editrelawan.jsp" method="post">  
 			<input type="hidden" name="id" value="<%=u.getId() %>"/>  
-			<table>  
+			<table class="table table-borderless">  
 				<tr>
 					<td>Nama</td>
 					<td><input type="text" name="nama" value="<%= u.getNama()%>"/></td>

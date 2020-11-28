@@ -27,7 +27,7 @@
     
     <div class="container body-content">
 	<h1>Daftar Relawan</h1>  
-	  
+	<a href="addrelawanform.jsp" type="button" class="btn btn-block btn-primary">Tambah Relawan</a> 
 	<%  
 	List<Relawan> list=RelawanDao.getAllRecords();  
 	request.setAttribute("list",list);  
