@@ -6,13 +6,7 @@
 	<meta charset="ISO-8859-1">
 	<title>Buat Artikel</title>
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/jquery-ui.min.css"/>
-	<script type="text/javascript" src="${pageContext.request.contextPath}/assets/jquery.js"></script>
-	<script type="text/javascript" src="${pageContext.request.contextPath}/assets/jquery-ui.min.js"></script>
-	<script>
-	  $( function() {
-	    $( "#datepicker" ).datepicker({ dateFormat: 'dd/mm/yy' });
-	  } );
-	 </script>
+	
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<style>
 	    p {
@@ -59,6 +53,13 @@
 	</form>
 	</div>
 	
-	<jsp:include page="../assets/footer.jsp"></jsp:include>  
+	<jsp:include page="../assets/footer.jsp"></jsp:include>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/assets/jquery.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/assets/jquery-ui.min.js"></script>
+	<script>
+	  $( function() {
+	    $( "#datepicker" ).datepicker({ dateFormat: 'dd/mm/yy' });
+	  } );
+	 </script>  
 </body>
 </html>
