@@ -39,9 +39,6 @@
 			          <a class="dropdown-item" href="/EASPwebE/relawan/viewrelawan">Relawan Terdaftar</a>
 			        </div>
 			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="/EASPwebE/admin/index.jsp">Admin</a>
-			      </li>
 			    </ul>
 			    <!-- Right Side Of Navbar -->
 		          <ul class="navbar-nav ml-auto">

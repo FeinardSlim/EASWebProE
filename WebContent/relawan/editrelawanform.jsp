@@ -66,7 +66,10 @@
 					<td>Email</td>
 					<td><input type="email" name="email" value="<%= u.getEmail()%>"/></td>
 				</tr>
-				<tr><td colspan="2"><input type="submit" value="Edit Data Pendaftar"/></td></tr>  
+				<tr>
+				<td><small><strong>catatan: pastikan semua data terisi</strong></small></td>
+				</tr>
+				<tr><td colspan="2"><input type="submit" class="btn btn-primary" value="Simpan"/></td></tr>  
 			</table>  
 		</form>
 	</div>
