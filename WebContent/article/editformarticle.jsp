@@ -5,9 +5,9 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Ubah Artikel</title>
-	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/jquery-ui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/jquery-ui.min.css"/>
 	
-	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<style>
 	    p {
 	        word-break: break-word;
@@ -31,6 +31,8 @@
 	%>  
   	
   	<div class="container body-container">
+  	<a href="viewarticle" class="btn btn-primary">Kembali ke list artikel</a>
+  	<br><br>
 		<h1>Edit Artikel</h1>  
 		<form action="editarticle.jsp" method="post">  
 		<input type="hidden" name="id" value="<%=u.getId() %>"/>
@@ -53,7 +55,7 @@
 				<td>Isi Artikel</td>
 				<td><textarea id="body" name="body"><%=u.getBody() %></textarea></td>
 				<tr>
-					<td colspan="2"><input type="submit" class="btn btn-info" value="Kirim Artikel"/></td>
+					<td colspan="2"><input type="submit" class="btn btn-info" value="Perbarui Artikel"/></td>
 				</tr>
 				</table>
 		</form> 
