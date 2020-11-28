@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Berhasil Mengubah Artikel</title>
+<link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 	<p>Artikel diperbarui!</p>  
