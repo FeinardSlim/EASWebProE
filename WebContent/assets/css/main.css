@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+
+body{
+	margin:5%;
+}
+
+nav{
+	margin-bottom:20px;
+}
+
+body h1{
+	margin-bottom:5%;
+}
+
+btn-block{
+	margin-bottom:5px !important;
+}
+
+table{
+	margin-top:20px;
+	margin-bottom:20px;
+}

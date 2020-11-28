@@ -3,14 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<style type="text/css">
-	<@include file="assets/css/bootstrap.css">
-	<@include file="assets/css/bootstrap-theme.css">
-	<@include file="assets/css/bootstrap-grid.css">
-</style>
-
-<script src="bootstrap/js/bootstrap.js"></script>
 <meta charset="ISO-8859-1">
 <title>Welcome to Sisco</title>
 </head>
