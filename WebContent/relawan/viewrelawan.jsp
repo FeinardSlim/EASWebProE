@@ -26,8 +26,7 @@
 	<jsp:include page="../assets/header.jsp"></jsp:include>  
     
     <div class="container body-content">
-	<h1>Daftar Relawan</h1>  
-	<a href="addrelawanform.jsp" type="button" class="btn btn-primary">Tambah Relawan</a> 
+	<h1>Daftar Relawan</h1>
 	<%  
 	List<Relawan> list=RelawanDao.getAllRecords();  
 	request.setAttribute("list",list);  
