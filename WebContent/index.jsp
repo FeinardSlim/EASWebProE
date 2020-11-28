@@ -25,72 +25,13 @@
 	request.setAttribute("list",list);  
 	%>  
 	
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<div class="container">
-	  <a class="navbar-brand" href="/EASPwebE/">SISCO lite</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
+	<jsp:include page="../assets/header.jsp"></jsp:include> 
 	
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item">
-	        <a class="nav-link" href="article/viewarticle">Artikel</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="relawan/viewrelawan">Relawan</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="admin/index">Admin</a>
-	      </li>
-	      <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Relawan
-	        </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" href="#"></a>
-	          <a class="dropdown-item" href="#">Another action</a>
-	          <div class="dropdown-divider"></div>
-	          <a class="dropdown-item" href="#">Something else here</a>
-	        </div>
-	      </li>
-	    </ul>
-	    <!-- Right Side Of Navbar -->
-          <ul class="navbar-nav ml-auto">
-              <!-- Authentication Links -->
-              <% 
-              	if ((session.getAttribute("user") == null) || (session.getAttribute("user") == "")) {
-              %>
-	              <li class="nav-item">
-	                  <a class="nav-link" href="admin/login">Login</a>
-	              </li>
-	              <li class="nav-item">
-	                  <a class="nav-link" href="admin/register">Register</a>
-	              </li>
-              <%} else {
-              %>
-                <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        ${user.fullname} <span class="caret"></span>
-                    </a>
-
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="admin/index">Dashboard</a>
-                        <a class="dropdown-item" href="logouto">Logout</a>
-                    </div>
-                </li>
-              <%
-			    }
-			  %>
-          </ul>
-	  </div>
-	  </div>
-	</nav>
-	<div style="padding-top:20px" class="container">
+	<div style="padding-top:20px" class="container body-content">
 	
 		<div class="jumbotron">
 		    <h1>SISCO lite</h1>
-		    <p class="lead">SISCO lite merupakan upgrade dari ARCO yang mengcakup bagian artikel dari SISCO (Sistem Informasi Siaga Corona) disertai Sistem Relawan</p>
+		    <p class="lead">SISCO lite merupakan upgrade dari ARCO yang mencakup bagian artikel dari SISCO (Sistem Informasi Siaga Corona) disertai Sistem Relawan</p>
 		    <a href="http://frightening-dungeon-33776.herokuapp.com/" class="btn btn-primary btn-lg">Kunjungi SISCO &raquo;</a>
 		    <a href="http://aulkiller-001-site1.itempurl.com/" class="btn btn-primary btn-lg">Atau ARCO &raquo;</a>
 		    <%
@@ -119,6 +60,7 @@
 		</div>
 		<!-- <jsp:include page="viewarticleuser.jsp"></jsp:include> -->
 	</div>
+		<jsp:include page="../assets/footer.jsp"></jsp:include> 
 	
 	<!-- <script src="bootstrap/js/bootstrap.js"></script> -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

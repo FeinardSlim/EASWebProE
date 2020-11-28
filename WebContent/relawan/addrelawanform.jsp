@@ -7,6 +7,7 @@
 <title>Pendaftaran Relawan</title>
 </head>
 <body>
+	<jsp:include page="../assets/header.jsp"></jsp:include>  
 	<h1>Pendaftaran Relawan</h1>  
 	<form action="addrelawan.jsp" method="post">  
 		<table class="table">  
@@ -41,6 +42,7 @@
 				<td colspan="2"><input type="submit" value="Daftar"/></td>
 			</tr>  
 		</table>  
-	</form>  
+	</form> 
+		<jsp:include page="../assets/footer.jsp"></jsp:include>  
 </body>
 </html>
