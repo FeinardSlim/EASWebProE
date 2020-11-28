@@ -34,13 +34,7 @@
 		    <p class="lead">SISCO lite merupakan upgrade dari ARCO yang mencakup bagian artikel dari SISCO (Sistem Informasi Siaga Corona) disertai Sistem Relawan</p>
 		    <a href="http://frightening-dungeon-33776.herokuapp.com/" class="btn btn-primary btn-lg">Kunjungi SISCO &raquo;</a>
 		    <a href="http://aulkiller-001-site1.itempurl.com/" class="btn btn-primary btn-lg">Atau ARCO &raquo;</a>
-		    <%
-	    		if ((session.getAttribute("user") == null) || (session.getAttribute("user") == "")){}else{
-			%>
-		        <a href="article/viewarticle" class="btn btn-primary btn-lg">Dashboard Artikel &raquo;</a>
-		    <%
-	    	}
-			%>
+		    
 		</div>
 		
 		<div class="row align-items-center container-fluid" style="padding-bottom:10%">
