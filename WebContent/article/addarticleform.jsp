@@ -57,9 +57,6 @@
 	</tr>
 		</table> 
 	</form>
-	<div class="container body-content">
-		<a href="/EASPwebE/" role="button" class="btn btn-info">balik ke halaman awal</a>
-	</div>
 	</div>
 	
 	<jsp:include page="../assets/footer.jsp"></jsp:include>  
