@@ -39,22 +39,22 @@
 		<tr>
 		<td>Judul</td>
 		<td><input type="text" name="title"/></td>
-	</tr> 
-	<tr>
-		<td>Kategori</td>
-		<td><input type="text" name="category"/></td>
-	</tr>  
-	<tr>
-		<td>Tanggal Rilis</td>
-		<td><input type="text" name="date" id="datepicker"/>
-		</td>
-	</tr>  
-	<tr>
-	<td>Isi Artikel</td>
-	<td><textarea id="body" name="body" placeholder="Masukkan isi artikel disini...."></textarea></td>
-	<tr>
-		<td colspan="2"><input type="submit" class="btn btn-info" value="Kirim Artikel"/></td>
-	</tr>
+		</tr> 
+		<tr>
+			<td>Kategori</td>
+			<td><input type="text" name="category"/></td>
+		</tr>  
+		<tr>
+			<td>Tanggal Rilis</td>
+			<td><input type="text" name="date" id="datepicker"/>
+			</td>
+		</tr>  
+		<tr>
+		<td>Isi Artikel</td>
+		<td><textarea id="body" name="body" placeholder="Masukkan isi artikel disini...."></textarea></td>
+		<tr>
+			<td colspan="2"><input type="submit" class="btn btn-info" value="Kirim Artikel"/></td>
+		</tr>
 		</table> 
 	</form>
 	<div class="container body-content">

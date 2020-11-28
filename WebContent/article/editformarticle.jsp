@@ -36,45 +36,32 @@
 	Article u=ArticleDao.getRecordById(Integer.parseInt(id));  
 	%>  
   	
-  	<div class="container boyd-container">
+  	<div class="container body-container">
 		<h1>Edit Artikel</h1>  
 		<form action="editarticle.jsp" method="post">  
-		<input type="hidden" name="id" value="<%=u.getId() %>"/>    
-	      <div class="form-group">
-	            <label class="control-label col-md-2" for="Title">Title</label>
-	            <div class="col-md-10">
-	                <input class="form-control text-box single-line" data-val="true" data-val-length="The field Title must be a string with a minimum length of 5 and a maximum length of 100." data-val-length-max="100" data-val-length-min="5" id="Title" name="Title" type="text" value=u.getTitle()>
-	                <span class="field-validation-valid text-danger" data-valmsg-for="Title" data-valmsg-replace="true"></span>
-	            </div>
-	        </div>
-	
-	        <div class="form-group">
-	            <label class="control-label col-md-2" for="ReleaseDate">Release Date</label>
-	            <div class="col-md-10">
-	                <input class="form-control text-box single-line" data-val="true" data-val-date="The field Release Date must be a date." data-val-required="The Release Date field is required." id="ReleaseDate" name="ReleaseDate" type="date" value="u.getDate()">
-	                <span class="field-validation-valid text-danger" data-valmsg-for="ReleaseDate" data-valmsg-replace="true"></span>
-	            </div>
-	        </div>
-	
-	        <div class="form-group">
-	            <label class="control-label col-md-2" for="Category">Category</label>
-	            <div class="col-md-10">
-	                <input class="form-control text-box single-line" data-val="true" data-val-length="The field Category must be a string with a maximum length of 30." data-val-length-max="30" data-val-regex="The field Category must match the regular expression '^[A-Z]+[a-zA-Z'\s]*$'." data-val-regex-pattern="^[A-Z]+[a-zA-Z'\s]*$" id="Category" name="Category" type="text" value="u.getCategory">
-	                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
-	            </div>
-	        </div>
-	
-	        <div class="form-group">
-	            <label class="control-label col-md-2" for="Body">Body</label>
-	            <div class="col-md-10">
-	                <textarea cols="20" data-val="true" data-val-length="The field Body must be a string with a minimum length of 20 and a maximum length of 2500." data-val-length-max="2500" data-val-length-min="20" htmlattributes="{ class = form-control }" id="Body" name="Body" rows="2">u.getBody()</textarea>
-	                <span class="field-validation-valid text-danger" data-valmsg-for="Body" data-valmsg-replace="true"></span>
-	            </div>
-	        </div>
-	        
-		<div class="col-md-4">
-			<input type="submit" value="Tambah artikel"/>
-		</div>
+		<input type="hidden" name="id" value="<%=u.getId() %>"/>
+		<form action="addarticle.jsp" method="post">
+			<table class="table table-borderless">
+				<tr>
+				<td>Judul</td>
+				<td><input type="text" name="title" value=<%=u.getTitle() %>/></td>
+				</tr> 
+				<tr>
+					<td>Kategori</td>
+					<td><input type="text" name="category" value=<%=u.getCategory() %>/></td>
+				</tr>  
+				<tr>
+					<td>Tanggal Rilis</td>
+					<td><input type="text" name="date" id="datepicker" value=<%=u.getDate() %>/>
+					</td>
+				</tr>  
+				<tr>
+				<td>Isi Artikel</td>
+				<td><textarea id="body" name="body" value=<%=u.getBody() %>></textarea></td>
+				<tr>
+					<td colspan="2"><input type="submit" class="btn btn-info" value="Kirim Artikel"/></td>
+				</tr>
+				</table>
 		</form> 
 	</div> 
 	

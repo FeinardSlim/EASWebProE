@@ -19,7 +19,7 @@
 	Article u=ArticleDao.getRecordById(Integer.parseInt(id));  
 	%>
 	
-	<jsp:include page="../assets/header.jsp"></jsp:include> 
+	<jsp:include page="assets/header.jsp"></jsp:include> 
 		
 	<div class="container body-content"> 
 	<h2>Details</h2>
@@ -42,6 +42,6 @@
 	    </div>
 	</div>
 	</div>
-	<jsp:include page="../assets/footer.jsp"></jsp:include> 
+	<jsp:include page="assets/footer.jsp"></jsp:include> 
 </body>
 </html>
