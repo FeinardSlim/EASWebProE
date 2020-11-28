@@ -10,7 +10,7 @@
 	        word-break: break-word;
 	    }
 	    .jumbotron {
-	        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/EASPwebE/assets/images/cdc-k0krntqcjfw-unsplash-2000x1125.jpg");
+	        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/assets/images/cdc-k0krntqcjfw-unsplash-2000x1125.jpg");
 	        background-size: cover;
 	        color:white;
 	    }
@@ -20,7 +20,7 @@
 <body>
 	<footer class="page-footer font-small blue">
            <div class="footer-copyright text-center py-3">
-               <p>© 2020 - Our WebProgramming JSP Application</p>
+               <p>ï¿½ 2020 - Our WebProgramming JSP Application</p>
            </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

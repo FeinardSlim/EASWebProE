@@ -10,13 +10,13 @@
         word-break: break-word;
     }
     .jumbotron {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/EASPwebE/assets/images/cdc-k0krntqcjfw-unsplash-2000x1125.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/assets/images/cdc-k0krntqcjfw-unsplash-2000x1125.jpg");
         background-size: cover;
         color:white;
     }
 </style>
 <link rel="stylesheet" href="../assets/css/main.css">
-<title>Sisco Lite Article</title>
+<title>Daftar Artikel</title>
 </head>
 <body>
 	<%@page import="com.fp.dao.ArticleDao,com.fp.bean.*,java.util.*"%>  
@@ -32,7 +32,7 @@
 	 <% 
       	if ((session.getAttribute("user") != null)) {
       %>
-			<a href="addarticleform.jsp" class="btn btn-outline-primary" role="button">Tambah Artikel</a> 
+			<a href="addarticleform.jsp" class="btn btn-primary" role="button">Tambah Artikel</a> 
        <%
        }
        %>  
@@ -42,7 +42,8 @@
 	request.setAttribute("list",list);  
 	%>  
 	  
-	<table border="1" width="90%" class="table table-hover thead-dark">  
+	<table width="90%" class="table table-hover table-striped">  
+		<thead>
 		<tr class="justify-content-center">
 			<% if ((session.getAttribute("user") != null)) { %>
 			<th>No</th>
@@ -55,7 +56,8 @@
 			<th>Sunting</th>
 			<th>Hapus</th>
 			<% } %>
-		</tr>  
+		</tr> 
+		</thead> 
 		<c:forEach items="${list}" var="u">  
 		<tr>
 			<% if ((session.getAttribute("user") != null)) { %>

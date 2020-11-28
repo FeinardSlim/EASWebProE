@@ -17,7 +17,7 @@
         word-break: break-word;
     }
     .jumbotron {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/EASPwebE/assets/images/cdc-k0krntqcjfw-unsplash-2000x1125.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/assets/images/cdc-k0krntqcjfw-unsplash-2000x1125.jpg");
         background-size: cover;
         color:white;
     }
@@ -54,8 +54,8 @@
 				<tr>
 					<td>Jenis Kelamin</td>
 					<td>  
-						<input type="radio" name="jenis_kelamin" value="Laki-laki"/>Laki-laki   
-						<input type="radio" name="jenis_kelamin" value="Perempuan"/>Perempuan
+						<input style="width:70px" type="radio" name="jenis_kelamin" value="Laki-laki"/>Laki-laki   
+						<input style="width:70px" type="radio" name="jenis_kelamin" value="Perempuan"/>Perempuan
 					</td>
 				</tr>
 				<tr>

@@ -13,7 +13,7 @@
 	        word-break: break-word;
 	    }
 	    .jumbotron {
-	        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/EASPwebE/assets/images/cdc-k0krntqcjfw-unsplash-2000x1125.jpg");
+	        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/assets/images/cdc-k0krntqcjfw-unsplash-2000x1125.jpg");
 	        background-size: cover;
 	        color:white;
 	    }
@@ -25,7 +25,7 @@
 	<jsp:include page="../assets/header.jsp"></jsp:include>  
 
 	<div class="container body-content">
-	<a href="viewarticle" class="btn btn-primary">Kembali ke list artikel</a>
+	<a href="viewarticle" class="btn btn-info">Kembali ke list artikel</a>
 	<br><br>
 	<h1>Tambahkan Artikel Baru</h1>
 	<form action="addarticle.jsp" method="post">
@@ -47,7 +47,7 @@
 			<td>Isi Artikel</td>
 			<td><textarea id="body" name="body" placeholder="Masukkan isi artikel disini...."></textarea></td>
 			<tr>
-				<td colspan="2"><input type="submit" class="btn btn-info" value="Kirim Artikel"/></td>
+				<td colspan="2"><input type="submit" class="btn btn-primary" value="Kirim Artikel"/></td>
 			</tr>
 		</table> 
 	</form>

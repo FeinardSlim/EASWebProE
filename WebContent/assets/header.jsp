@@ -9,7 +9,7 @@
 	        word-break: break-word;
 	    }
 	    .jumbotron {
-	        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/EASPwebE/assets/images/cdc-k0krntqcjfw-unsplash-2000x1125.jpg");
+	        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/assets/images/cdc-k0krntqcjfw-unsplash-2000x1125.jpg");
 	        background-size: cover;
 	        color:white;
 	    }
@@ -20,7 +20,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
-			  <a class="navbar-brand" href="/EASPwebE/">SISCO lite</a>
+			  <a class="navbar-brand" href="/">SISCO lite</a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
@@ -28,15 +28,15 @@
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav mr-auto">
 			      <li class="nav-item">
-			        <a class="nav-link" href="/EASPwebE/article/viewarticle.jsp">Artikel</a>
+			        <a class="nav-link" href="/article/viewarticle">Artikel</a>
 			      </li>
 			      <li class="nav-item dropdown">
 			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			          Relawan
 			        </a>
 			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			          <a class="dropdown-item" href="/EASPwebE/relawan/addrelawanform.jsp">Pendaftaran Relawan</a>
-			          <a class="dropdown-item" href="/EASPwebE/relawan/viewrelawan">Relawan Terdaftar</a>
+			          <a class="dropdown-item" href="/relawan/addrelawanform">Pendaftaran Relawan</a>
+			          <a class="dropdown-item" href="/relawan/viewrelawan">Relawan Terdaftar</a>
 			        </div>
 			      </li>
 			    </ul>
@@ -47,10 +47,10 @@
 		              	if ((session.getAttribute("user") == null) || (session.getAttribute("user") == "")) {
 		              %>
 			              <li class="nav-item">
-			                  <a class="nav-link" href="/EASPwebE/admin/login">Login</a>
+			                  <a class="nav-link" href="/admin/login">Login</a>
 			              </li>
 			              <li class="nav-item">
-			                  <a class="nav-link" href="/EASPwebE/admin/register">Register</a>
+			                  <a class="nav-link" href="/admin/register">Register</a>
 			              </li>
 		              <%} else {
 		              %>
@@ -60,8 +60,7 @@
 		                    </a>
 		
 		                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-		                        <a class="dropdown-item" href="/EASPwebE/admin/index.jsp">Dashboard</a>
-		                        <a class="dropdown-item" href="/EASPwebE/logouto.jsp">Logout</a>
+		                        <a class="dropdown-item" href="/logouto">Logout</a>
 		                    </div>
 		                </li>
 		              <%
