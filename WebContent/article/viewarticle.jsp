@@ -32,7 +32,7 @@
 	 <% 
       	if ((session.getAttribute("user") != null)) {
       %>
-			<a href="addarticleform.jsp" class="btn btn-outline-primary btn-block" role="button">Tambah Artikel</a> 
+			<a href="addarticleform.jsp" class="btn btn-outline-primary" role="button">Tambah Artikel</a> 
        <%
        }
        %>  
