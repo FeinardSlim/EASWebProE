@@ -22,10 +22,9 @@
 	<jsp:include page="assets/header.jsp"></jsp:include> 
 	<br><br>	
 	<div class="container body-content"> 
-	<h2>Details</h2>
+	<h2>Isi Artikel</h2>
 
 	<div>
-	    <h4>Artikel</h4>
 	    <a href="./" class="btn btn-info">Kembali</a>
 	    <hr />
 	    <div class="text-center container-fluid" style="font-size:30px;text-transform:uppercase; font-weight:bold ;padding-bottom:15px">

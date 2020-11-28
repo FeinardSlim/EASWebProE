@@ -50,7 +50,7 @@
 			<th>Judul</th>
 			<th>Kategori</th>
 			<th>Tanggal Rilis</th>  
-			<th>Isi Article</th>
+			<th>Isi Artikel</th>
 			<% if ((session.getAttribute("user") != null)) { %>
 			<th>Sunting</th>
 			<th>Hapus</th>
@@ -64,7 +64,7 @@
 			<td>${u.getTitle()}</td>
 			<td>${u.getCategory()}</td>  
 			<td>${u.getDate()}</td>
-			<td><a href="../viewdetail.jsp?id=${u.getId()}">Detail</a></td>
+			<td><a href="../viewdetail.jsp?id=${u.getId()}">Rinci</a></td>
 			<% if ((session.getAttribute("user") != null)) { %>
 			<td><a href="editformarticle.jsp?id=${u.getId()}">Sunting</a></td>  
 			<td><a href="deletearticle.jsp?id=${u.getId()}">Hapus</a></td>
