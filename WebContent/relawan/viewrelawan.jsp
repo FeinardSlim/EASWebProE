@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="../assets/css/main.css">
 
 </head>
-<body class="container">
+<body>
 	<%@page import="com.fp.dao.RelawanDao,com.fp.bean.*,java.util.*"%>  
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
 	
@@ -27,13 +27,14 @@
     
     <div class="container body-content">
 	<h1>Daftar Relawan</h1>  
-	<a href="addrelawanform.jsp" type="button" class="btn btn-block btn-primary">Tambah Relawan</a> 
+	<a href="addrelawanform.jsp" type="button" class="btn btn-primary">Tambah Relawan</a> 
 	<%  
 	List<Relawan> list=RelawanDao.getAllRecords();  
 	request.setAttribute("list",list);  
 	%>  
 	  
-	<table border="1" width="90%" class="table table-hover thead-dark">  
+	<table width="90%" class="table table-hover table-striped">  
+		<thead>
 		<tr class="justify-content-center">
 			<th>No</th>
 			<th>Nama</th>
@@ -50,7 +51,8 @@
 		     <%
 		     }
 		     %>
-		</tr>  
+		</tr>
+		</thead>  
 		<c:forEach items="${list}" var="u">  
 		<tr>
 			<td>${u.getId()}</td>
