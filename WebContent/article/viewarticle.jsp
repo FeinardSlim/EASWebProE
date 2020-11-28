@@ -15,7 +15,7 @@
         color:white;
     }
 </style>
-<link rel="stylesheet" href="../assets/css/maino.css">
+<link rel="stylesheet" href="../assets/css/main.css">
 <title>Sisco Lite Article</title>
 </head>
 <body>
@@ -74,6 +74,8 @@
 	  </div>
 	</nav>
 	
+	<div class="container">
+	
 	<h1>Daftar Artikel</h1>
 	
 	 <% 
@@ -116,5 +118,7 @@
 		</c:forEach>  
 	</table>  
 	<br/> 
+	
+	</div>
 </body>
 </html>

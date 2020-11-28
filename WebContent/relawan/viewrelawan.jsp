@@ -79,7 +79,7 @@
      <%
      }
      %>  
-     
+     <div class="container">
 	<h1>Daftar Relawan</h1>  
 	  
 	<%  
@@ -126,5 +126,7 @@
 		</c:forEach>  
 	</table>  
 	<br/>
+	
+     </div>
 </body>
 </html>
