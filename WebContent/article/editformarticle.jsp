@@ -49,3 +49,50 @@
 	</form>  
 </body>
 </html>
+
+
+
+<!-- <div class="form-horizontal">
+        <h4>Artikel</h4>
+        <hr>
+        
+        <input data-val="true" data-val-number="The field ID must be a number." data-val-required="The ID field is required." id="ID" name="ID" type="hidden" value="8">
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Title">Title</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line" data-val="true" data-val-length="The field Title must be a string with a minimum length of 5 and a maximum length of 100." data-val-length-max="100" data-val-length-min="5" id="Title" name="Title" type="text" value="[UPDATE] Kasus Virus Corona Indonesia per 31 Oktober 2020 Naik Jadi 410.088 Orang">
+                <span class="field-validation-valid text-danger" data-valmsg-for="Title" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="ReleaseDate">Release Date</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line" data-val="true" data-val-date="The field Release Date must be a date." data-val-required="The Release Date field is required." id="ReleaseDate" name="ReleaseDate" type="date" value="11/19/2020">
+                <span class="field-validation-valid text-danger" data-valmsg-for="ReleaseDate" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Category">Category</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line" data-val="true" data-val-length="The field Category must be a string with a maximum length of 30." data-val-length-max="30" data-val-regex="The field Category must match the regular expression '^[A-Z]+[a-zA-Z'\s]*$'." data-val-regex-pattern="^[A-Z]+[a-zA-Z'\s]*$" id="Category" name="Category" type="text" value="Berita Rakyat">
+                <span class="field-validation-valid text-danger" data-valmsg-for="Category" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Body">Body</label>
+            <div class="col-md-10">
+                <textarea cols="20" data-val="true" data-val-length="The field Body must be a string with a minimum length of 20 and a maximum length of 2500." data-val-length-max="2500" data-val-length-min="20" htmlattributes="{ class = form-control }" id="Body" name="Body" rows="2">
+                <span class="field-validation-valid text-danger" data-valmsg-for="Body" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default">
+            </div>
+        </div>
+    </div> -->

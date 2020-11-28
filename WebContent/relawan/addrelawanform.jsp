@@ -9,7 +9,7 @@
 <body>
 	<h1>Pendaftaran Relawan</h1>  
 	<form action="addrelawan.jsp" method="post">  
-		<table>  
+		<table class="table">  
 			<tr>
 				<td>Nama</td>
 				<td><input type="text" name="nama" placeholder="Jhonny Yes Phapa"/></td>
@@ -22,7 +22,6 @@
 				<td>Tempat, Tanggal Lahir</td>
 				<td><input type="text" name="ttl" placeholder='Jakarta, 12 September 1998'/></td>
 			</tr>  
-			
 			<tr>
 				<td>Jenis Kelamin</td>
 				<td>  
