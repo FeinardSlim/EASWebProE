@@ -18,7 +18,7 @@
 	<%@page import="com.fp.dao.ArticleDao,com.fp.bean.*,java.util.*"%>  
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
 	  
-	<h1>Articles List</h1>  
+	<h3>Daftar Artikel</h3>  
 	  
 	<%  
 	List<Article> list=ArticleDao.getAllRecords();  

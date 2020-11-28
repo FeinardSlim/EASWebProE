@@ -17,14 +17,7 @@
 	%>
 	<div style="text-align: center">
         <h1>Welcome to SISCO</h1>
-        <b>${user.fullname} (${user.email})</b>
-        <br><br>
-        <a href="../addarticleform">Add Article</a>
-        <a href="../viewarticle">View Article</a>
-        <a href="../addrelawanform">Add Relawan</a>
-        <a href="../viewrelawan">View Relawan</a>
-        <br><br>
-        <a href="../logouto">Logout</a>
+        <a href="/EASPwebE/">kembali ke halaman utama</a>
     </div>
 	<%
 	    }
