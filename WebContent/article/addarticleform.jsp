@@ -32,15 +32,15 @@
 		<table class="table table-borderless">
 			<tr>
 			<td>Judul</td>
-			<td><input type="text" name="title"/></td>
+			<td><input type="text" name="title" placeholder="Masukkan judul disini"/></td>
 			</tr> 
 			<tr>
 				<td>Kategori</td>
-				<td><input type="text" name="category"/></td>
+				<td><input type="text" name="category" placeholder="Masukkan Kategori"/></td>
 			</tr>  
 			<tr>
 				<td>Tanggal Rilis</td>
-				<td><input type="text" name="date" id="datepicker"/>
+				<td><input type="text" name="date" id="datepicker" placeholder="Pilih tanggal"/>
 				</td>
 			</tr>  
 			<tr>
