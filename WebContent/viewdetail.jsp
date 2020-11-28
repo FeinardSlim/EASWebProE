@@ -20,7 +20,7 @@
 	%>
 	
 	<jsp:include page="assets/header.jsp"></jsp:include> 
-		
+	<br><br>	
 	<div class="container body-content"> 
 	<h2>Details</h2>
 
