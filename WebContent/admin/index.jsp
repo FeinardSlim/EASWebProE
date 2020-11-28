@@ -10,8 +10,9 @@
 	<%
 	    if ((session.getAttribute("user") == null) || (session.getAttribute("user") == "")) {
 	%>
-	Anda Belum Login
+	Anda Belum Login<br>
 	<a href="login">Silahkan Login</a>
+	<br> 
 	<a href="register">Atau Daftar</a>
 	<%} else {
 	%>
